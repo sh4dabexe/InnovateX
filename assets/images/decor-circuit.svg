@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" fill="none">
+  <defs>
+    <linearGradient id="trace-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#45E6D0" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#4DA3FF" stop-opacity="0.05" />
+    </linearGradient>
+    <linearGradient id="trace-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9B6CFF" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#45E6D0" stop-opacity="0.02" />
+    </linearGradient>
+    <filter id="node-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Base dark subtle grid lines -->
+  <g stroke="rgba(255, 255, 255, 0.02)" stroke-width="1">
+    <line x1="0" y1="150" x2="1600" y2="150" />
+    <line x1="0" y1="300" x2="1600" y2="300" />
+    <line x1="0" y1="450" x2="1600" y2="450" />
+    <line x1="0" y1="600" x2="1600" y2="600" />
+    <line x1="0" y1="750" x2="1600" y2="750" />
+    <line x1="200" y1="0" x2="200" y2="900" />
+    <line x1="400" y1="0" x2="400" y2="900" />
+    <line x1="600" y1="0" x2="600" y2="900" />
+    <line x1="800" y1="0" x2="800" y2="900" />
+    <line x1="1000" y1="0" x2="1000" y2="900" />
+    <line x1="1200" y1="0" x2="1200" y2="900" />
+    <line x1="1400" y1="0" x2="1400" y2="900" />
+  </g>
+
+  <!-- Circuit traces -->
+  <g stroke="url(#trace-cyan)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 120 150 L 300 150 L 350 200 L 520 200 L 560 240 L 700 240" />
+    <path d="M 850 100 L 920 100 L 960 140 L 1100 140 L 1150 190 L 1380 190" />
+    <path d="M 200 450 L 380 450 L 440 510 L 620 510 L 660 470 L 800 470" />
+    <path d="M 980 420 L 1050 420 L 1100 470 L 1250 470 L 1290 430 L 1450 430" />
+    <path d="M 150 720 L 280 720 L 330 670 L 490 670 L 530 710 L 750 710" />
+    <path d="M 880 780 L 1020 780 L 1070 730 L 1220 730 L 1260 770 L 1500 770" />
+  </g>
+
+  <g stroke="url(#trace-purple)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 400 80 L 460 140 L 460 280 L 510 330 L 510 490" />
+    <path d="M 1180 250 L 1230 300 L 1230 460 L 1280 510 L 1280 680" />
+    <path d="M 720 320 L 780 380 L 890 380 L 940 330" />
+  </g>
+
+  <!-- Nodes and glow pads -->
+  <g fill="#45E6D0" filter="url(#node-glow)">
+    <circle cx="300" cy="150" r="3" />
+    <circle cx="560" cy="240" r="3.5" />
+    <circle cx="960" cy="140" r="3" />
+    <circle cx="1150" cy="190" r="3.5" />
+    <circle cx="440" cy="510" r="3" />
+    <circle cx="800" cy="470" r="4" fill="#4DA3FF" />
+    <circle cx="1100" cy="470" r="3" />
+    <circle cx="330" cy="670" r="3.5" />
+    <circle cx="1070" cy="730" r="3" />
+    <circle cx="1260" cy="770" r="4" fill="#9B6CFF" />
+  </g>
+
+  <g fill="none" stroke="#45E6D0" stroke-width="1" opacity="0.6">
+    <rect x="700" y="236" width="8" height="8" rx="1" />
+    <rect x="1380" y="186" width="8" height="8" rx="1" />
+    <rect x="1450" y="426" width="8" height="8" rx="1" />
+    <rect x="750" y="706" width="8" height="8" rx="1" />
+  </g>
+</svg>

@@ -1,0 +1,99 @@
+/* ==========================================================================
+   InnovateX 2026 — Design System Tokens & Variables
+   ========================================================================== */
+
+:root {
+  /* Color Palette - Core Surfaces */
+  --bg-primary: #070a12;
+  --bg-secondary: #0c1220;
+  --surface: #101827;
+  --surface-soft: #151f31;
+  --surface-elevated: #1a263c;
+  --surface-glass: rgba(16, 24, 39, 0.72);
+  --surface-glass-border: rgba(255, 255, 255, 0.12);
+
+  /* Typography Colors */
+  --text-primary: #f8fafc;
+  --text-secondary: #a7b0c0;
+  --text-muted: #6f7a8d;
+  --text-inverse: #070a12;
+
+  /* Accent Tones */
+  --accent-blue: #4da3ff;
+  --accent-cyan: #45e6d0;
+  --accent-purple: #9b6cff;
+  --accent-pink: #ff5fb2;
+  --accent-amber: #f59e0b;
+  --accent-success: #10b981;
+  --accent-danger: #ef4444;
+
+  /* Gradients */
+  --grad-primary: linear-gradient(135deg, #45e6d0 0%, #4da3ff 50%, #9b6cff 100%);
+  --grad-cyan-blue: linear-gradient(135deg, #45e6d0 0%, #4da3ff 100%);
+  --grad-blue-purple: linear-gradient(135deg, #4da3ff 0%, #9b6cff 100%);
+  --grad-purple-pink: linear-gradient(135deg, #9b6cff 0%, #ff5fb2 100%);
+  --grad-surface: linear-gradient(180deg, rgba(21, 31, 49, 0.8) 0%, rgba(16, 24, 39, 0.6) 100%);
+  --grad-glow: radial-gradient(circle, rgba(69, 230, 208, 0.15) 0%, rgba(155, 108, 255, 0.05) 50%, transparent 80%);
+
+  /* Borders & Dividers */
+  --border: rgba(255, 255, 255, 0.1);
+  --border-strong: rgba(255, 255, 255, 0.18);
+  --border-glow: rgba(69, 230, 208, 0.35);
+
+  /* Shadows & Glows */
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.25);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.5);
+  --shadow-glow-cyan: 0 0 25px rgba(69, 230, 208, 0.25);
+  --shadow-glow-blue: 0 0 25px rgba(77, 163, 255, 0.25);
+  --shadow-glow-purple: 0 0 25px rgba(155, 108, 255, 0.25);
+
+  /* Typography Families */
+  --font-display: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  /* Spacing Scale (8px base) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-32: 128px;
+
+  /* Container & Layout */
+  --container-max-width: 1240px;
+  --container-padding: clamp(16px, 4vw, 40px);
+
+  /* Radii */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+  --radius-full: 9999px;
+
+  /* Z-Index Hierarchy */
+  --z-background: 0;
+  --z-content: 1;
+  --z-decorative: 2;
+  --z-sticky-nav: 50;
+  --z-mobile-menu: 60;
+  --z-modal-backdrop: 90;
+  --z-modal-content: 100;
+  --z-toast: 110;
+
+  /* Transitions & Animation Timings */
+  --ease-spring: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-fast: 160ms var(--ease-spring);
+  --transition-base: 260ms var(--ease-spring);
+  --transition-slow: 450ms var(--ease-spring);
+}

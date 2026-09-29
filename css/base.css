@@ -1,0 +1,188 @@
+/* ==========================================================================
+   InnovateX 2026 — Base Styles & Resets
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  color-scheme: dark;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Background Ambient Texture */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle at 15% 20%, rgba(69, 230, 208, 0.04) 0%, transparent 45%),
+    radial-gradient(circle at 85% 70%, rgba(155, 108, 255, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(77, 163, 255, 0.03) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: var(--z-background);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 6vw + 1rem, 5.25rem);
+  letter-spacing: -0.03em;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: clamp(2rem, 3.5vw + 0.5rem, 3.25rem);
+}
+
+h3 {
+  font-size: clamp(1.25rem, 1.8vw + 0.2rem, 1.65rem);
+}
+
+h4 {
+  font-size: 1.15rem;
+}
+
+p {
+  color: var(--text-secondary);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--accent-cyan);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: inherit;
+}
+
+img, picture, svg {
+  display: block;
+  max-width: 100%;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+input, select, textarea {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+/* Container */
+.container {
+  width: min(var(--container-max-width), calc(100% - (var(--container-padding) * 2)));
+  margin-inline: auto;
+}
+
+/* Eyebrow Label */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--accent-cyan);
+  margin-bottom: var(--space-3);
+}
+
+.eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--accent-cyan);
+  box-shadow: 0 0 10px var(--accent-cyan);
+}
+
+/* Gradient Text Helper */
+.text-gradient {
+  background: var(--grad-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-cyan {
+  background: var(--grad-cyan-blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-purple {
+  background: var(--grad-purple-pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Section Header Structure */
+.section-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto var(--space-12) auto;
+}
+
+.section-header .section-subtitle {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  margin-top: var(--space-3);
+}
+
+/* Focus Styling for Accessibility */
+:focus-visible {
+  outline: 2px solid var(--accent-cyan);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
