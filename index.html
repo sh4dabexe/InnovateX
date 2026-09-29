@@ -46,10 +46,6 @@
         <a href="#events" class="nav-link">Events</a>
         <a href="#schedule" class="nav-link">Schedule</a>
         <a href="#gallery" class="nav-link">Gallery</a>
-        <a href="#ai-matchmaker" class="nav-link nav-link-ai" id="nav-ai-btn">
-          <span class="ai-spark-dot"></span>
-          AI Matchmaker
-        </a>
         <a href="#register" class="btn btn-primary nav-cta">Register Now</a>
       </nav>
 
@@ -71,9 +67,6 @@
         <a href="#events" class="mobile-nav-link">Events</a>
         <a href="#schedule" class="mobile-nav-link">Schedule</a>
         <a href="#gallery" class="mobile-nav-link">Gallery</a>
-        <a href="#ai-matchmaker" class="mobile-nav-link mobile-nav-ai">
-          <span class="ai-spark-dot"></span> AI Matchmaker (TypeSafe)
-        </a>
         <a href="#register" class="btn btn-primary mobile-nav-cta">Register Now</a>
       </nav>
     </div>
@@ -125,7 +118,7 @@
             <div class="hero-visual-overlay"></div>
             <div class="hero-visual-chip">
               <span class="chip-pulse"></span>
-              <span>SYSTEM ONE ONLINE</span>
+              <span>REGISTRATION ACTIVE</span>
             </div>
           </div>
         </div>
@@ -217,7 +210,7 @@
           <div class="stat-card">
             <div class="stat-number text-gradient">20+</div>
             <div class="stat-label">Flagship Events</div>
-            <div class="stat-sub">From AI Hackathons to Combat Robotics</div>
+            <div class="stat-sub">From 24h Hackathons to Combat Robotics</div>
           </div>
           <div class="stat-card">
             <div class="stat-number text-gradient-cyan">5000+</div>
@@ -245,7 +238,7 @@
           <div class="eyebrow">COMPETITIVE TRACKS</div>
           <h2 class="section-title">Five Challenges. One Arena.</h2>
           <p class="section-subtitle">
-            Engineered to reward depth, craftsmanship, and velocity. Discover your track or use our TypeSafe AI Matchmaker below to find your optimal arena.
+            Engineered to reward depth, craftsmanship, and velocity. Discover your track and register below.
           </p>
         </div>
 
@@ -256,59 +249,7 @@
       </div>
     </section>
 
-    <!-- ==================== 5. TYPESAFE AI MATCHMAKER SECTION ==================== -->
-    <section class="ai-matchmaker-section section-padding" id="ai-matchmaker">
-      <div class="container">
-        <div class="ai-card">
-          <div class="ai-card-glow"></div>
-          <div class="ai-header">
-            <div class="ai-badge">
-              <span class="ai-spark-dot"></span>
-              <span>POWERED BY TYPESAFE AI • SYSTEM ONE JEV</span>
-            </div>
-            <h2 class="ai-title">Discover Your Best Track Match</h2>
-            <p class="ai-desc">
-              Unsure which arena fits your skill stack? System One fast decision models evaluate your background, preferred tools, and goals to compute calibrated Choice, Score, and Noul readiness judgments in real-time.
-            </p>
-          </div>
-
-          <div class="ai-form-container">
-            <div class="ai-input-group">
-              <label for="ai-profile-input" class="ai-label">Tell us about your skills, interests, and what you love building:</label>
-              <div class="ai-input-wrapper">
-                <textarea id="ai-profile-input" class="ai-textarea" rows="3" placeholder="e.g., I am a 3rd year student passionate about competitive algorithms, dynamic programming, and high-performance C++. Or: I love rapid prototyping with Flutter, Figma wireframing, and interactive micro-animations..."></textarea>
-                <div class="ai-samples-row">
-                  <span class="samples-title">Quick Try:</span>
-                  <button type="button" class="btn-sample" data-sample="Fullstack web & AI developer looking to build a high-impact product with API integrations in a 24-hour sprint.">Fullstack Hackathon</button>
-                  <button type="button" class="btn-sample" data-sample="Mechatronics student with Arduino, Raspberry Pi, CAD design, and high-torque motor combat experience.">Combat Robotics</button>
-                  <button type="button" class="btn-sample" data-sample="Data structures fanatic who solves LeetCode hard problems under strict runtime and memory constraints.">Competitive Coder</button>
-                  <button type="button" class="btn-sample" data-sample="Product designer obsessed with design systems, user journeys, typography, and dark-mode Figma prototypes.">UI/UX Designer</button>
-                  <button type="button" class="btn-sample" data-sample="Early-stage student founder with a market-validated SaaS pitch, business model, and deck.">Startup Pitch</button>
-                </div>
-              </div>
-            </div>
-
-            <div class="ai-actions-row">
-              <button type="button" id="btn-run-matchmaker" class="btn btn-primary ai-action-btn">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path></svg>
-                <span>Run System One Matchmaker</span>
-              </button>
-              <button type="button" id="btn-toggle-inspector" class="btn btn-ghost ai-inspector-btn">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-                <span>Inspect TypeSafe Primitive Payloads</span>
-              </button>
-            </div>
-
-            <!-- Matchmaker Result Panel -->
-            <div class="ai-results-panel" id="ai-results-panel" style="display: none;">
-              <!-- Populated via js/typesafe-engine.js -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==================== 6. SCHEDULE SECTION ==================== -->
+    <!-- ==================== 5. SCHEDULE SECTION ==================== -->
     <section class="schedule section-padding" id="schedule">
       <div class="container">
         <div class="section-header">
@@ -360,8 +301,8 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-time">Day 1 • 01:00 PM IST</div>
-              <h3 class="timeline-title">Innovation Masterclass: System One AI</h3>
-              <p class="timeline-desc">Deep-dive into decision intelligence, calibrated probabilities, and modern programmable common sense for software.</p>
+              <h3 class="timeline-title">Innovation Masterclass: Scalable Systems</h3>
+              <p class="timeline-desc">Deep-dive into high-throughput backend architecture, resilient engineering, and distributed systems.</p>
               <span class="badge badge-blue">Keynote</span>
             </div>
           </div>
@@ -549,11 +490,7 @@
               <div class="form-group" id="group-message">
                 <label for="reg-message" class="form-label">Project Vision / Team Note <span class="optional">(Optional)</span></label>
                 <textarea id="reg-message" name="message" class="form-textarea" rows="3" placeholder="Briefly describe your project idea, teammates, or what you intend to build..."></textarea>
-                <div class="message-meta-row">
-                  <span class="helper-text">TypeSafe AI evaluates proposal alignment automatically.</span>
-                  <button type="button" id="btn-screen-proposal" class="btn-text-ai">⚡ Verify with TypeSafe</button>
-                </div>
-                <div id="proposal-ai-feedback" class="proposal-ai-box" style="display: none;"></div>
+                <span class="helper-text" style="display:block; margin-top:6px;">Add any teammate names or project summary if applicable.</span>
               </div>
 
               <!-- Submit Button -->
@@ -623,7 +560,7 @@
 
       <div class="footer-bottom">
         <p class="copyright">© 2026 InnovateX Festival Committee. All rights reserved.</p>
-        <p class="credits">Crafted for creators • Powered by TypeSafe System One AI</p>
+        <p class="credits">Crafted for creators • InnovateX 2026 Festival</p>
       </div>
     </div>
   </footer>
@@ -675,46 +612,7 @@
     </div>
   </div>
 
-  <!-- ==================== TYPESAFE AI INSPECTOR DRAWER ==================== -->
-  <aside class="ai-inspector-drawer" id="ai-inspector-drawer" aria-hidden="true">
-    <div class="inspector-header">
-      <div class="inspector-title">
-        <span class="ai-spark-dot"></span>
-        <span>TypeSafe System One Inspector</span>
-      </div>
-      <button class="inspector-close" id="btn-inspector-close" aria-label="Close Inspector">✕</button>
-    </div>
-    <div class="inspector-body">
-      <p class="inspector-sub">Inspect how TypeSafe System One evaluates state into typed snap judgments (Choice, Score, Noul).</p>
-      
-      <div class="inspector-section">
-        <div class="inspector-lbl">Model Target:</div>
-        <div class="inspector-code-badge">jev-1.13 (TypeSafe System One)</div>
-      </div>
-
-      <div class="inspector-section">
-        <div class="inspector-lbl">Evaluation Primitives:</div>
-        <ul class="primitive-tags">
-          <li><strong>Choice:</strong> <code>track_recommendation</code> (Picks 1 of 5 tracks)</li>
-          <li><strong>Score:</strong> <code>technical_synergy</code> (Levels 1-4 scale)</li>
-          <li><strong>Noul:</strong> <code>collaboration_readiness</code> (P(yes) 0.0 - 1.0)</li>
-        </ul>
-      </div>
-
-      <div class="inspector-section">
-        <div class="inspector-lbl">Active Request State Payload:</div>
-        <pre class="inspector-pre"><code id="inspector-state-code">// Run the matchmaker above to see live state JSON</code></pre>
-      </div>
-
-      <div class="inspector-section">
-        <div class="inspector-lbl">Model Judgment Answers:</div>
-        <pre class="inspector-pre"><code id="inspector-response-code">// Answers with calibrated distributions will render here</code></pre>
-      </div>
-    </div>
-  </aside>
-
   <!-- Scripts -->
-  <script src="js/typesafe-engine.js"></script>
   <script src="js/countdown.js"></script>
   <script src="js/navigation.js"></script>
   <script src="js/events.js"></script>

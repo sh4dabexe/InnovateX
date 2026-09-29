@@ -41,7 +41,7 @@
   // IntersectionObserver for staggered fade-up effects
   function initScrollReveal() {
     const revealTargets = document.querySelectorAll(
-      '.about-editorial, .about-visual-column, .stat-card, .event-card, .timeline-item, .gallery-item, .register-info, .register-form-card, .ai-card'
+      '.about-editorial, .about-visual-column, .stat-card, .event-card, .timeline-item, .gallery-item, .register-info, .register-form-card'
     );
 
     if (!('IntersectionObserver' in window)) {

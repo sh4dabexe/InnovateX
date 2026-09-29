@@ -113,10 +113,6 @@
     grid-template-columns: 1fr;
   }
 
-  .match-card {
-    grid-template-columns: 1fr;
-  }
-
   .footer-top {
     grid-template-columns: 1fr;
   }

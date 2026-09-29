@@ -2,9 +2,8 @@
 
 [![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)](https://github.com)
 [![Stack](https://img.shields.io/badge/Stack-HTML5%20%7C%20CSS3%20%7C%20Vanilla%20JS-blue)](https://github.com)
-[![AI Engine](https://img.shields.io/badge/AI%20Intelligence-TypeSafe%20System%20One%20(Jev)-purple)](https://typesafe.ai)
 
-InnovateX 2026 is an immersive, futuristic student technology festival portal designed to bridge the gap between engineering curiosity and industry-grade product creation. Built adhering strictly to the InnovateX 2026 Design System, Flow Specifications, Layout Architecture, and powered by TypeSafe AI System One decision intelligence.
+InnovateX 2026 is an immersive, futuristic student technology festival portal designed to bridge the gap between engineering curiosity and industry-grade product creation. Built adhering strictly to the InnovateX 2026 Design System, Flow Specifications, and Layout Architecture.
 
 ---
 
@@ -50,30 +49,8 @@ Interactive cards with hover elevation, image zoom, metadata badges, and deep de
   - **Phone**: Indian mobile validation (10 digits starting with 6, 7, 8, or 9 with `+91` prefix).
   - **College/Institution**: Required string length validation.
   - **Year of Study**: Required dropdown selection.
-  - **Event Track**: Required track selection (auto-populated by event cards or AI matchmaker).
+  - **Event Track**: Required track selection (auto-populated by event cards).
 - **Confirmation Modal**: Generates unique Delegate Registration IDs (`IX26-XXXXXX`) with summary breakdown upon successful client-side validation.
-
----
-
-## ⚡ TypeSafe AI System One Integration
-
-InnovateX 2026 integrates **TypeSafe AI's System One (Jev)** models as programming primitives:
-
-### Primitives Implemented:
-1. **`Choice` (`track_recommendation`)**:
-   - Analyzes participant skills, tools, and background descriptions.
-   - Evaluates probability distributions across the 5 tracks (`hackforge`, `roborumble`, `code_clash`, `designx`, `startup_arena`).
-   - Reports calibrated choice confidence percentages.
-2. **`Score` (`technical_synergy` & `innovation_score`)**:
-   - Evaluates tournament readiness on a defined 4-level scale (`Novice Explorer` → `Podium Contender`).
-   - Returns continuous scores and level probability distributions.
-3. **`Noul` (`collaboration_readiness` & `category_fit`)**:
-   - Returns calibrated true/false probabilities ($P(\text{yes}) \in [0.0, 1.0]$) for team synergy and technical proposal depth.
-
-### Interactive Features:
-- **1-Click Track Auto-Fill**: Automatically applies recommended tracks directly into the registration form.
-- **Proposal Screener**: Real-time pre-verification of participant project descriptions.
-- **TypeSafe Inspector Drawer**: Slide-over developer drawer displaying live JSON state requests, System One questions, and model judgment answers.
 
 ---
 
@@ -85,7 +62,7 @@ InnovateX/
 ├── README.md                   # Comprehensive project documentation
 ├── .gitignore                  # Git hygiene rules
 ├── assets/
-│   ├── images/                 # 13 high-resolution festival and event visuals
+│   ├── images/                 # High-resolution festival and event visuals
 │   │   ├── hero-bg.jpg
 │   │   ├── about-innovation.jpg
 │   │   ├── event-hackforge.jpg
@@ -107,7 +84,7 @@ InnovateX/
 │   ├── variables.css           # 8px spacing system, color tokens, z-index hierarchy
 │   ├── base.css                # Resets, typography, layout container, utilities, skip-link
 │   ├── components.css          # Buttons, badges, countdown card, modal, lightbox
-│   ├── sections.css            # Section layouts (Navbar, Hero, About, Events, AI, Schedule, Gallery, Register, Footer)
+│   ├── sections.css            # Section layouts (Navbar, Hero, About, Events, Schedule, Gallery, Register, Footer)
 │   └── responsive.css          # Breakpoints (< 380px, < 640px, < 1024px, > 1440px)
 └── js/
     ├── main.js                 # App initialization, IntersectionObserver scroll reveal, counter observer
@@ -115,30 +92,8 @@ InnovateX/
     ├── navigation.js           # Sticky glass navbar, active indicator, mobile drawer
     ├── events.js               # Event data model, dynamic card rendering, details modal
     ├── gallery.js              # Gallery grid rendering, keyboard lightbox
-    ├── validation.js           # Vanilla JS validation with inline error states
-    └── typesafe-engine.js      # TypeSafe System One client, primitives, matchmaker & inspector
+    └── validation.js           # Vanilla JS validation with inline error states
 ```
-
----
-
-## 📜 Meaningful Git Commit History
-
-The repository was built incrementally across 14 milestone commits:
-
-1. `Initial project setup` — Directory scaffolding, .gitignore, SVG branding, base tokens.
-2. `Create semantic page structure` — Accessible HTML5 document layout with ARIA landmarks.
-3. `Add navigation and hero` — Sticky glass navbar, mobile menu drawer, and cyber hero section.
-4. `Implement live countdown` — Real-time timer with zero/expiry state handling.
-5. `Build about section` — Editorial mission statement, visual spotlight, and animated statistics.
-6. `Add event cards and interactions` — Dynamic rendering of 5 events and accessible modal.
-7. `Create schedule timeline` — Chronological agenda with Day 1 & Day 2 filter tabs.
-8. `Add gallery and lightbox` — Asymmetric gallery grid and keyboard-navigated lightbox.
-9. `Build registration form` — Participant registration inputs, perks list, and phone wrapper.
-10. `Implement form validation` — Strict vanilla JS validation, inline errors, and success state.
-11. `Add responsive styling` — Mobile-first breakpoints and widescreen accommodations.
-12. `Polish animations and accessibility` — Skip-to-content links, micro-animations, and focus rings.
-13. `Fix mobile layout issues` — 100dvh mobile menu, flexible input wrappers, and horizontal overflow checks.
-14. `Update project documentation` — Complete technical documentation and architecture reference.
 
 ---
 

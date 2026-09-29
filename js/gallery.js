@@ -22,8 +22,8 @@
     },
     {
       id: 'gallery-3',
-      title: 'System One Workshop',
-      subtitle: 'Hands-on AI Decision Prototyping',
+      title: 'Engineering Workshop',
+      subtitle: 'Hands-on Technology Prototyping',
       image: 'assets/images/gallery-workshop.jpg',
       aspect: 'medium',
     },

@@ -257,9 +257,6 @@
     });
   }
 
-  // Export dataset for TypeSafe Matchmaker
-  window.INNOVATEX_EVENTS = EVENTS_DATA;
-
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initEvents);
   } else {

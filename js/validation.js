@@ -194,12 +194,6 @@
         fields[key].input.classList.remove('is-valid');
       });
 
-      const proposalAiBox = document.getElementById('proposal-ai-feedback');
-      if (proposalAiBox) {
-        proposalAiBox.style.display = 'none';
-        proposalAiBox.innerHTML = '';
-      }
-
       if (closeBtn) {
         closeBtn.onclick = () => {
           successModal.classList.remove('is-open');
