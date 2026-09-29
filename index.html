@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InnovateX 2026 — Next-Gen Student Technology Festival</title>
+  <meta name="description" content="InnovateX 2026 is the premier college technology festival where ideas become experiences. Hackathons, robotics, competitive coding, UI/UX, and startup arena.">
+  <meta name="keywords" content="InnovateX 2026, tech fest, hackathon, robotics, coding competition, design sprint, startup pitch, student festival">
+  <meta name="theme-color" content="#070a12">
+
+  <!-- Open Graph & Social Cards -->
+  <meta property="og:title" content="InnovateX 2026 — Tech • Innovation • Creativity">
+  <meta property="og:description" content="A next-generation student festival where ideas become experiences. Join 5000+ participants across 20+ events with ₹2L+ in prizes.">
+  <meta property="og:image" content="assets/images/hero-bg.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/logo/innovatex-logo.svg">
+
+  <!-- Google Fonts Preconnect & Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ==================== 1. STICKY NAVBAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-container">
+      <a href="#hero" class="navbar-logo" aria-label="InnovateX 2026 Home">
+        <img src="assets/logo/innovatex-logo.svg" alt="InnovateX 2026 Logo" width="180" height="45">
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links" id="nav-menu" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#events" class="nav-link">Events</a>
+        <a href="#schedule" class="nav-link">Schedule</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#ai-matchmaker" class="nav-link nav-link-ai" id="nav-ai-btn">
+          <span class="ai-spark-dot"></span>
+          AI Matchmaker
+        </a>
+        <a href="#register" class="btn btn-primary nav-cta">Register Now</a>
+      </nav>
+
+      <!-- Mobile Hamburger Toggle -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer-content">
+      <nav class="mobile-nav-links" aria-label="Mobile Navigation">
+        <a href="#hero" class="mobile-nav-link">Home</a>
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#events" class="mobile-nav-link">Events</a>
+        <a href="#schedule" class="mobile-nav-link">Schedule</a>
+        <a href="#gallery" class="mobile-nav-link">Gallery</a>
+        <a href="#ai-matchmaker" class="mobile-nav-link mobile-nav-ai">
+          <span class="ai-spark-dot"></span> AI Matchmaker (TypeSafe)
+        </a>
+        <a href="#register" class="btn btn-primary mobile-nav-cta">Register Now</a>
+      </nav>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- ==================== 2. HERO SECTION ==================== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg-glow"></div>
+      <div class="hero-bg-circuit" style="background-image: url('assets/images/decor-circuit.svg');"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="eyebrow hero-eyebrow">TECH • INNOVATION • CREATIVITY</div>
+          <h1 class="hero-title">
+            INNOVATE<span class="text-gradient">X</span> <span class="hero-year">2026</span>
+          </h1>
+          <p class="hero-tagline">
+            Innovate. Create. Inspire.
+          </p>
+          <p class="hero-description">
+            A next-generation student festival where ideas become experiences. Join visionary creators, engineers, and designers across 20+ flagship challenges, workshops, and ₹2,00,000+ in grand prizes.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#register" class="btn btn-primary hero-btn">
+              <span>Register Now</span>
+              <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#events" class="btn btn-secondary hero-btn">
+              <span>Explore Events</span>
+            </a>
+          </div>
+
+          <div class="hero-meta-badges">
+            <div class="meta-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#45E6D0" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              <span>October 24–25, 2026</span>
+            </div>
+            <div class="meta-badge">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4DA3FF" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Nexus Innovation Hub, Bengaluru</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-visual-card">
+            <img src="assets/images/hero-bg.jpg" alt="InnovateX futuristic energy nexus" class="hero-main-img" loading="eager">
+            <div class="hero-visual-overlay"></div>
+            <div class="hero-visual-chip">
+              <span class="chip-pulse"></span>
+              <span>SYSTEM ONE ONLINE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Countdown Widget -->
+      <div class="container hero-countdown-wrapper">
+        <div class="countdown-card" id="countdown-card">
+          <div class="countdown-header">
+            <span class="countdown-title">FESTIVAL COUNTDOWN</span>
+            <span class="countdown-target" id="countdown-target-label">Target: Oct 24, 2026 • 09:00 AM IST</span>
+          </div>
+          <div class="countdown-grid" id="countdown-timer" role="timer" aria-live="polite">
+            <div class="countdown-unit">
+              <div class="countdown-val" id="cd-days">00</div>
+              <div class="countdown-lbl">Days</div>
+            </div>
+            <div class="countdown-separator">:</div>
+            <div class="countdown-unit">
+              <div class="countdown-val" id="cd-hours">00</div>
+              <div class="countdown-lbl">Hours</div>
+            </div>
+            <div class="countdown-separator">:</div>
+            <div class="countdown-unit">
+              <div class="countdown-val" id="cd-minutes">00</div>
+              <div class="countdown-lbl">Minutes</div>
+            </div>
+            <div class="countdown-separator">:</div>
+            <div class="countdown-unit">
+              <div class="countdown-val" id="cd-seconds">00</div>
+              <div class="countdown-lbl">Seconds</div>
+            </div>
+          </div>
+          <div class="countdown-expired-msg" id="countdown-expired-msg" style="display: none;">
+            <span class="live-dot"></span> INNOVATEX 2026 IS LIVE! JOIN US AT NEXUS HUB
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. ABOUT SECTION ==================== -->
+    <section class="about section-padding" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-editorial">
+            <div class="eyebrow">ABOUT INNOVATEX</div>
+            <h2 class="about-heading">
+              Where Engineering Curiosity Meets Real-World Impact
+            </h2>
+            <p class="about-text">
+              InnovateX 2026 is an experiential festival uniting collegiate innovators, roboticists, software engineers, and digital designers. Conceived as an antidote to routine academic symposiums, InnovateX places participants inside fast-moving, authentic problem spaces.
+            </p>
+            <p class="about-subtext">
+              From 24-hour sprint hackathons with hardware integrations to high-voltage combat robotics and live startup pitches before seasoned venture builders, every challenge is designed to test resilience, technical acumen, and creative audacity.
+            </p>
+            
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <div class="highlight-bullet"></div>
+                <div>
+                  <strong>Autonomous Problem Tracks:</strong> Real challenges vetted by industry pioneers.
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-bullet"></div>
+                <div>
+                  <strong>Mentorship & Sprints:</strong> Direct critique and office hours with domain experts.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-visual-column">
+            <div class="about-img-frame">
+              <img src="assets/images/about-innovation.jpg" alt="Students collaborating around futuristic interactive prototype table" loading="lazy">
+              <div class="about-img-badge">
+                <span class="badge-icon">⚡</span>
+                <div class="badge-text">
+                  <span class="badge-num">48 Hours</span>
+                  <span class="badge-sub">Of Relentless Creation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Festival Statistics Blocks -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number text-gradient">20+</div>
+            <div class="stat-label">Flagship Events</div>
+            <div class="stat-sub">From AI Hackathons to Combat Robotics</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number text-gradient-cyan">5000+</div>
+            <div class="stat-label">Participants</div>
+            <div class="stat-sub">Students, Builders & Designers Nationwide</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number text-gradient">50+</div>
+            <div class="stat-label">Colleges Represented</div>
+            <div class="stat-sub">Top Engineering & Design Institutes</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number text-gradient-purple">₹2L+</div>
+            <div class="stat-label">Prize Pool</div>
+            <div class="stat-sub">Cash Awards, Incubation Grants & Swag</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. EVENTS SECTION ==================== -->
+    <section class="events section-padding" id="events">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">COMPETITIVE TRACKS</div>
+          <h2 class="section-title">Five Challenges. One Arena.</h2>
+          <p class="section-subtitle">
+            Engineered to reward depth, craftsmanship, and velocity. Discover your track or use our TypeSafe AI Matchmaker below to find your optimal arena.
+          </p>
+        </div>
+
+        <!-- Event Cards Grid rendered via js/events.js -->
+        <div class="events-grid" id="events-grid">
+          <!-- Dynamically populated by events.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. TYPESAFE AI MATCHMAKER SECTION ==================== -->
+    <section class="ai-matchmaker-section section-padding" id="ai-matchmaker">
+      <div class="container">
+        <div class="ai-card">
+          <div class="ai-card-glow"></div>
+          <div class="ai-header">
+            <div class="ai-badge">
+              <span class="ai-spark-dot"></span>
+              <span>POWERED BY TYPESAFE AI • SYSTEM ONE JEV</span>
+            </div>
+            <h2 class="ai-title">Discover Your Best Track Match</h2>
+            <p class="ai-desc">
+              Unsure which arena fits your skill stack? System One fast decision models evaluate your background, preferred tools, and goals to compute calibrated Choice, Score, and Noul readiness judgments in real-time.
+            </p>
+          </div>
+
+          <div class="ai-form-container">
+            <div class="ai-input-group">
+              <label for="ai-profile-input" class="ai-label">Tell us about your skills, interests, and what you love building:</label>
+              <div class="ai-input-wrapper">
+                <textarea id="ai-profile-input" class="ai-textarea" rows="3" placeholder="e.g., I am a 3rd year student passionate about competitive algorithms, dynamic programming, and high-performance C++. Or: I love rapid prototyping with Flutter, Figma wireframing, and interactive micro-animations..."></textarea>
+                <div class="ai-samples-row">
+                  <span class="samples-title">Quick Try:</span>
+                  <button type="button" class="btn-sample" data-sample="Fullstack web & AI developer looking to build a high-impact product with API integrations in a 24-hour sprint.">Fullstack Hackathon</button>
+                  <button type="button" class="btn-sample" data-sample="Mechatronics student with Arduino, Raspberry Pi, CAD design, and high-torque motor combat experience.">Combat Robotics</button>
+                  <button type="button" class="btn-sample" data-sample="Data structures fanatic who solves LeetCode hard problems under strict runtime and memory constraints.">Competitive Coder</button>
+                  <button type="button" class="btn-sample" data-sample="Product designer obsessed with design systems, user journeys, typography, and dark-mode Figma prototypes.">UI/UX Designer</button>
+                  <button type="button" class="btn-sample" data-sample="Early-stage student founder with a market-validated SaaS pitch, business model, and deck.">Startup Pitch</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="ai-actions-row">
+              <button type="button" id="btn-run-matchmaker" class="btn btn-primary ai-action-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path></svg>
+                <span>Run System One Matchmaker</span>
+              </button>
+              <button type="button" id="btn-toggle-inspector" class="btn btn-ghost ai-inspector-btn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                <span>Inspect TypeSafe Primitive Payloads</span>
+              </button>
+            </div>
+
+            <!-- Matchmaker Result Panel -->
+            <div class="ai-results-panel" id="ai-results-panel" style="display: none;">
+              <!-- Populated via js/typesafe-engine.js -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. SCHEDULE SECTION ==================== -->
+    <section class="schedule section-padding" id="schedule">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">CHRONOLOGICAL AGENDA</div>
+          <h2 class="section-title">Festival Timeline</h2>
+          <p class="section-subtitle">
+            Two days of non-stop action, keynote innovations, competitive battles, and celebrations.
+          </p>
+        </div>
+
+        <div class="timeline" id="schedule-timeline">
+          <!-- Timeline items populated with rich semantic markup -->
+          <div class="timeline-item timeline-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-time">Day 1 • 09:00 AM IST</div>
+              <h3 class="timeline-title">Registration & Delegate Check-In</h3>
+              <p class="timeline-desc">Welcome kit distribution, badge issuance, mentor meetups, and physical workspace allocation.</p>
+              <span class="badge badge-cyan">Welcome</span>
+            </div>
+          </div>
+
+          <div class="timeline-item timeline-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-time">Day 1 • 10:00 AM IST</div>
+              <h3 class="timeline-title">Opening Ceremony & Keynote</h3>
+              <p class="timeline-desc">Lighting of the digital lamp, address by lead industry technologists, and unveiling of festival challenge briefs.</p>
+              <span class="badge badge-purple">Ceremony</span>
+            </div>
+          </div>
+
+          <div class="timeline-item timeline-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-time">Day 1 • 11:00 AM IST</div>
+              <h3 class="timeline-title">HackForge Hackathon Commences</h3>
+              <p class="timeline-desc">The 24-hour sprint begins! Teams assemble in the engineering pods to architect, code, and test prototypes.</p>
+              <span class="badge badge-cyan">Hackathon</span>
+            </div>
+          </div>
+
+          <div class="timeline-item timeline-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-time">Day 1 • 01:00 PM IST</div>
+              <h3 class="timeline-title">Innovation Masterclass: System One AI</h3>
+              <p class="timeline-desc">Deep-dive into decision intelligence, calibrated probabilities, and modern programmable common sense for software.</p>
+              <span class="badge badge-blue">Keynote</span>
+            </div>
+          </div>
+
+          <div class="timeline-item timeline-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-time">Day 1 • 02:30 PM IST</div>
+              <h3 class="timeline-title">RoboRumble Arena Qualifiers</h3>
+              <p class="timeline-desc">High-voltage 1v1 combat bot arena face-offs under intense tactical telemetry regulations.</p>
+              <span class="badge badge-pink">Robotics</span>
+            </div>
+          </div>
+
+          <div class="timeline-item timeline-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-time">Day 1 • 04:30 PM IST</div>
+              <h3 class="timeline-title">Code Clash: Algorithmic Duel</h3>
+              <p class="timeline-desc">Timed algorithmic problem-solving sprint featuring dynamic programming, graph invariants, and edge-case execution.</p>
+              <span class="badge badge-cyan">Competitive Coding</span>
+            </div>
+          </div>
+
+          <div class="timeline-item timeline-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-time">Day 2 • 10:00 AM IST</div>
+              <h3 class="timeline-title">DesignX Sprint Evaluations</h3>
+              <p class="timeline-desc">Interactive product prototype walkthroughs with leading design heads, testing heuristics and micro-interactions.</p>
+              <span class="badge badge-purple">UI/UX</span>
+            </div>
+          </div>
+
+          <div class="timeline-item timeline-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-time">Day 2 • 02:00 PM IST</div>
+              <h3 class="timeline-title">Startup Arena Grand Pitches</h3>
+              <p class="timeline-desc">Shortlisted student ventures pitch live in front of angel investors and seed syndicates on the main stage.</p>
+              <span class="badge badge-blue">Entrepreneurship</span>
+            </div>
+          </div>
+
+          <div class="timeline-item timeline-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-time">Day 2 • 06:30 PM IST</div>
+              <h3 class="timeline-title">Grand Finale & Prize Ceremony</h3>
+              <p class="timeline-desc">Announcement of champions across all tracks, trophy presentations, cash awards handover, and celebratory closing night.</p>
+              <span class="badge badge-gold">Awards</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 7. GALLERY SECTION ==================== -->
+    <section class="gallery section-padding" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">VISUAL ARCHIVE</div>
+          <h2 class="section-title">Moments of Creation</h2>
+          <p class="section-subtitle">
+            An asymmetric visual journey through the energy, prototypes, adrenaline, and triumphs of InnovateX.
+          </p>
+        </div>
+
+        <!-- Dynamic Masonry-Inspired Asymmetric Grid -->
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Dynamically populated or rendered via js/gallery.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 8. REGISTRATION SECTION ==================== -->
+    <section class="register section-padding" id="register">
+      <div class="container">
+        <div class="register-grid">
+          <div class="register-info">
+            <div class="eyebrow">JOIN THE FESTIVAL</div>
+            <h2 class="register-heading">Claim Your Spot at InnovateX 2026</h2>
+            <p class="register-desc">
+              Registrations are open for individuals and collegiate teams. Selected participants receive access to all workshops, high-speed campus infrastructure, mentorship lounges, and festival meals.
+            </p>
+
+            <div class="perks-list">
+              <div class="perk-item">
+                <div class="perk-icon">🎯</div>
+                <div>
+                  <h4>Verified Certificate of Participation</h4>
+                  <p>Digitally signed credentials backed by festival partners.</p>
+                </div>
+              </div>
+              <div class="perk-item">
+                <div class="perk-icon">🏆</div>
+                <div>
+                  <h4>₹2,00,000+ Prize Pool Access</h4>
+                  <p>Cash prizes, hardware toolkits, cloud credits, and direct interview opportunities.</p>
+                </div>
+              </div>
+              <div class="perk-item">
+                <div class="perk-icon">🚀</div>
+                <div>
+                  <h4>Direct Mentor Access</h4>
+                  <p>Collaborate with veterans in machine learning, robotics, and venture funding.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="registration-note">
+              <span class="note-icon">💡</span>
+              <p>Team registrations will configure member details after preliminary slot confirmation.</p>
+            </div>
+          </div>
+
+          <div class="register-form-card">
+            <form id="registration-form" class="registration-form" novalidate>
+              <div class="form-header">
+                <h3>Participant Registration</h3>
+                <p>Complete the form below. Client-side verified.</p>
+              </div>
+
+              <!-- Full Name Field -->
+              <div class="form-group" id="group-name">
+                <label for="reg-name" class="form-label">Full Name <span class="required">*</span></label>
+                <input type="text" id="reg-name" name="name" class="form-input" placeholder="e.g. Aditi Sharma" required autocomplete="name">
+                <span class="form-error" id="error-name" aria-live="polite"></span>
+              </div>
+
+              <!-- Email Field -->
+              <div class="form-group" id="group-email">
+                <label for="reg-email" class="form-label">Email Address <span class="required">*</span></label>
+                <input type="email" id="reg-email" name="email" class="form-input" placeholder="aditi.sharma@college.edu" required autocomplete="email">
+                <span class="form-error" id="error-email" aria-live="polite"></span>
+              </div>
+
+              <!-- Phone Field (Indian 10-digit) -->
+              <div class="form-group" id="group-phone">
+                <label for="reg-phone" class="form-label">Phone Number (10 digits) <span class="required">*</span></label>
+                <div class="phone-input-wrapper">
+                  <span class="phone-prefix">+91</span>
+                  <input type="tel" id="reg-phone" name="phone" class="form-input phone-field" placeholder="9876543210" maxlength="10" required autocomplete="tel">
+                </div>
+                <span class="form-error" id="error-phone" aria-live="polite"></span>
+              </div>
+
+              <!-- College/Institution Field -->
+              <div class="form-group" id="group-college">
+                <label for="reg-college" class="form-label">College / University <span class="required">*</span></label>
+                <input type="text" id="reg-college" name="college" class="form-input" placeholder="e.g. National Institute of Technology" required>
+                <span class="form-error" id="error-college" aria-live="polite"></span>
+              </div>
+
+              <!-- Two column select: Year & Event -->
+              <div class="form-row">
+                <div class="form-group" id="group-year">
+                  <label for="reg-year" class="form-label">Year of Study <span class="required">*</span></label>
+                  <select id="reg-year" name="year" class="form-select" required>
+                    <option value="">Select Year</option>
+                    <option value="1st Year">1st Year (Freshman)</option>
+                    <option value="2nd Year">2nd Year (Sophomore)</option>
+                    <option value="3rd Year">3rd Year (Junior)</option>
+                    <option value="4th Year">4th Year (Senior)</option>
+                    <option value="Postgraduate">Postgraduate / Masters</option>
+                  </select>
+                  <span class="form-error" id="error-year" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group" id="group-event">
+                  <label for="reg-event" class="form-label">Choose Track <span class="required">*</span></label>
+                  <select id="reg-event" name="event" class="form-select" required>
+                    <option value="">Select Event Track</option>
+                    <option value="HackForge">HackForge (24h Hackathon)</option>
+                    <option value="RoboRumble">RoboRumble (Combat Robotics)</option>
+                    <option value="Code Clash">Code Clash (Algorithms)</option>
+                    <option value="DesignX">DesignX (UI/UX Challenge)</option>
+                    <option value="Startup Arena">Startup Arena (Pitch Battle)</option>
+                  </select>
+                  <span class="form-error" id="error-event" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <!-- Optional Message / Proposal -->
+              <div class="form-group" id="group-message">
+                <label for="reg-message" class="form-label">Project Vision / Team Note <span class="optional">(Optional)</span></label>
+                <textarea id="reg-message" name="message" class="form-textarea" rows="3" placeholder="Briefly describe your project idea, teammates, or what you intend to build..."></textarea>
+                <div class="message-meta-row">
+                  <span class="helper-text">TypeSafe AI evaluates proposal alignment automatically.</span>
+                  <button type="button" id="btn-screen-proposal" class="btn-text-ai">⚡ Verify with TypeSafe</button>
+                </div>
+                <div id="proposal-ai-feedback" class="proposal-ai-box" style="display: none;"></div>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" id="btn-submit-registration" class="btn btn-primary btn-block">
+                <span>Confirm Registration</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== 9. FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="footer-logo">
+            <img src="assets/logo/innovatex-logo.svg" alt="InnovateX 2026 Logo" width="160" height="40">
+          </a>
+          <p class="footer-description">
+            InnovateX 2026 is India's leading student-led technology festival celebrating the spirit of curiosity, code, and hardware craft.
+          </p>
+          <div class="footer-status">
+            <span class="status-indicator"></span>
+            <span>Registration Portal Active • Bengaluru, India</span>
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-col">
+            <h4 class="footer-title">Navigation</h4>
+            <ul class="footer-list">
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#about">About Fest</a></li>
+              <li><a href="#events">Flagship Events</a></li>
+              <li><a href="#schedule">Timeline</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#register">Register</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-title">Flagship Tracks</h4>
+            <ul class="footer-list">
+              <li><a href="#events" data-event-select="HackForge">HackForge Hackathon</a></li>
+              <li><a href="#events" data-event-select="RoboRumble">RoboRumble Arena</a></li>
+              <li><a href="#events" data-event-select="Code Clash">Code Clash Challenge</a></li>
+              <li><a href="#events" data-event-select="DesignX">DesignX UI/UX Sprint</a></li>
+              <li><a href="#events" data-event-select="Startup Arena">Startup Arena Pitch</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-title">Connect & Social</h4>
+            <ul class="footer-list">
+              <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram (@innovatex26)</a></li>
+              <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn (/innovatex-fest)</a></li>
+              <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub (/innovatex2026)</a></li>
+              <li><a href="mailto:contact@innovatex.io">contact@innovatex.io</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 InnovateX Festival Committee. All rights reserved.</p>
+        <p class="credits">Crafted for creators • Powered by TypeSafe System One AI</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== EVENT DETAILS MODAL ==================== -->
+  <div class="modal-backdrop" id="event-modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true" tabindex="-1">
+    <div class="modal-card" id="event-modal-card">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close modal">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div class="modal-body" id="modal-body-content">
+        <!-- Rendered dynamically via js/events.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== GALLERY LIGHTBOX ==================== -->
+  <div class="lightbox-backdrop" id="lightbox-backdrop" role="dialog" aria-modal="true" aria-hidden="true" tabindex="-1">
+    <div class="lightbox-container">
+      <button class="lightbox-close" id="lightbox-close-btn" aria-label="Close lightbox">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <button class="lightbox-nav lightbox-prev" id="lightbox-prev-btn" aria-label="Previous photo">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+      <button class="lightbox-nav lightbox-next" id="lightbox-next-btn" aria-label="Next photo">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+
+      <div class="lightbox-figure">
+        <img src="" alt="" id="lightbox-img" class="lightbox-img">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== SUCCESS FEEDBACK MODAL ==================== -->
+  <div class="modal-backdrop" id="success-modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true" tabindex="-1">
+    <div class="modal-card modal-success-card" id="success-modal-card">
+      <div class="success-icon-wrapper">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#45E6D0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+      </div>
+      <h3 class="success-title">You're Registered for InnovateX 2026!</h3>
+      <p class="success-desc" id="success-summary-text">
+        Your registration details have been validated and saved. Check your registered email for schedule updates, badge QR code, and discord community invite.
+      </p>
+      <div class="success-details-box" id="success-details-box"></div>
+      <button type="button" class="btn btn-primary btn-block" id="btn-success-close">Awesome, Got It!</button>
+    </div>
+  </div>
+
+  <!-- ==================== TYPESAFE AI INSPECTOR DRAWER ==================== -->
+  <aside class="ai-inspector-drawer" id="ai-inspector-drawer" aria-hidden="true">
+    <div class="inspector-header">
+      <div class="inspector-title">
+        <span class="ai-spark-dot"></span>
+        <span>TypeSafe System One Inspector</span>
+      </div>
+      <button class="inspector-close" id="btn-inspector-close" aria-label="Close Inspector">✕</button>
+    </div>
+    <div class="inspector-body">
+      <p class="inspector-sub">Inspect how TypeSafe System One evaluates state into typed snap judgments (Choice, Score, Noul).</p>
+      
+      <div class="inspector-section">
+        <div class="inspector-lbl">Model Target:</div>
+        <div class="inspector-code-badge">jev-1.13 (TypeSafe System One)</div>
+      </div>
+
+      <div class="inspector-section">
+        <div class="inspector-lbl">Evaluation Primitives:</div>
+        <ul class="primitive-tags">
+          <li><strong>Choice:</strong> <code>track_recommendation</code> (Picks 1 of 5 tracks)</li>
+          <li><strong>Score:</strong> <code>technical_synergy</code> (Levels 1-4 scale)</li>
+          <li><strong>Noul:</strong> <code>collaboration_readiness</code> (P(yes) 0.0 - 1.0)</li>
+        </ul>
+      </div>
+
+      <div class="inspector-section">
+        <div class="inspector-lbl">Active Request State Payload:</div>
+        <pre class="inspector-pre"><code id="inspector-state-code">// Run the matchmaker above to see live state JSON</code></pre>
+      </div>
+
+      <div class="inspector-section">
+        <div class="inspector-lbl">Model Judgment Answers:</div>
+        <pre class="inspector-pre"><code id="inspector-response-code">// Answers with calibrated distributions will render here</code></pre>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Scripts -->
+  <script src="js/typesafe-engine.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/events.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
