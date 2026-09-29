@@ -133,6 +133,22 @@
 
 /* Mobile Devices (< 640px) */
 @media (max-width: 640px) {
+  .mobile-drawer {
+    height: calc(100vh - 76px);
+    height: calc(100dvh - 76px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .phone-input-wrapper {
+    width: 100%;
+  }
+
+  .phone-field {
+    flex: 1;
+    min-width: 0;
+  }
+
   .hero-year {
     display: block;
     margin-top: 4px;
