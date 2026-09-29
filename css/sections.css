@@ -943,6 +943,40 @@
   word-break: break-all;
 }
 
+/* Schedule Filter Tabs */
+.schedule-filter-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: var(--space-5);
+  flex-wrap: wrap;
+}
+
+.schedule-tab {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 8px 18px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.schedule-tab:hover {
+  border-color: var(--accent-cyan);
+  color: var(--text-primary);
+}
+
+.schedule-tab.active {
+  background: rgba(69, 230, 208, 0.15);
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+  box-shadow: 0 0 15px rgba(69, 230, 208, 0.2);
+}
+
 /* --------------------------------------------------------------------------
    6. Schedule Timeline Section
    -------------------------------------------------------------------------- */

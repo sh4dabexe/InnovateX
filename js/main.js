@@ -8,6 +8,34 @@
   function initApp() {
     initScrollReveal();
     initCounterAnimations();
+    initScheduleFilter();
+  }
+
+  // Interactive schedule day tabs
+  function initScheduleFilter() {
+    const tabs = document.querySelectorAll('.schedule-tab');
+    const items = document.querySelectorAll('.timeline-item');
+
+    if (!tabs.length || !items.length) return;
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        tabs.forEach((t) => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        const selectedDay = tab.getAttribute('data-day');
+
+        items.forEach((item) => {
+          const itemDay = item.getAttribute('data-day');
+          if (selectedDay === 'all' || itemDay === selectedDay) {
+            item.style.display = '';
+            item.classList.add('is-visible');
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
   }
 
   // IntersectionObserver for staggered fade-up effects
