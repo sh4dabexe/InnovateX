@@ -94,19 +94,3 @@ InnovateX/
     ├── gallery.js              # Gallery grid rendering, keyboard lightbox
     └── validation.js           # Vanilla JS validation with inline error states
 ```
-
----
-
-## 🚀 Running Locally
-
-Serve the directory with any standard HTTP server:
-
-```bash
-# Python 3
-python -m http.server 8000
-
-# Node.js
-npx serve .
-```
-
-Open `http://localhost:8000` in any modern web browser.
